@@ -50,3 +50,17 @@ p {
     border-radius: 3pxz;
     margin-top: 4px;
 }
+
+#new-game {
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: large;
+    border-radius: 3pxz;
+    margin-top: 4px;
+
+}

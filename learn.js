@@ -1,6 +1,4 @@
-let player = {
-  name: "Peter",
-  chips: 145}
+
 let cards = [];
 let hasBlackjack = false;
 sumOfCards = 0;
@@ -10,8 +8,7 @@ let startGameBtn = document.getElementById("start-game-btn");
 let showEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
-let playerScore = document.getElementById('player-el')
-playerScore.textContent = player.name + ": $" + player.chips
+let newGameBtn = document.getElementById("new-game")
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
@@ -69,4 +66,8 @@ function newCard() {
 }
 newCardBtn.addEventListener("click", newCard); 
 
+function newGameFunction(){
+  document.location.reload();
+}
 
+newGameBtn.addEventListener('click', newGameFunction)
